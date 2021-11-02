@@ -74,7 +74,7 @@ namespace Pixels
             this.drawPanel.TabIndex = 3;
             this.drawPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.drawPanel_Paint);
             // 
-            // Form1
+            // Pixels
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -85,7 +85,8 @@ namespace Pixels
             this.Controls.Add(this.drawBtn);
             this.Controls.Add(this.listBox);
             this.Location = new System.Drawing.Point(15, 15);
-            this.Name = "Form1";
+            this.Name = "Pixels";
+            this.Text = "Pixels";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.ResumeLayout(false);

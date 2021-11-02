@@ -45,6 +45,8 @@ namespace Pixels
 
         private void fillArea()
         {
+            rectanglesRed.Clear();
+            rectanglesWhite.Clear();
             drawPanel.BackColor = Color.Red;
             this.Invalidate(); // force Redraw the form
         }
@@ -111,7 +113,7 @@ namespace Pixels
             
             SolidBrush sb = new SolidBrush(Color.Red);
 
-            drawPanel.BackColor = Color.White;
+            
             foreach (var rectangle in this.rectanglesRed)
             {
                 g.FillRectangle(sb, rectangle);
